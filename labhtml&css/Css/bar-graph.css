@@ -1,0 +1,114 @@
+body {
+    font-family: sans-serif;
+    padding: 10px 20px;
+    text-align: center;
+    font-size: 16px;
+}
+
+.bar-graph-container {
+    padding: 10px;
+    background-color: lightgray;
+    display: inline-block;
+    margin-top: 10%;
+}
+
+.bar-graph-inner {
+    display: inline-block;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.bar-graph {
+    width: 30px;
+    height: 300px;
+    background-color: white;
+    position: relative;
+}
+
+[class^="bar-graph-one"] {
+    position: absolute;
+    width: 100%;
+    bottom: 0px;
+    left: 0px;
+    z-index: 1;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+    animation-duration: 1s;
+    animation-delay: 0.5s;
+}
+
+[class^="bar-graph-two"] {
+    position: absolute;
+    width: 100%;
+    bottom: 0px;
+    left: 0px;
+    z-index: 1;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+    animation-duration: 1s;
+    animation-delay: 0.5s;
+}
+
+[class^="bar-graph-three"] {
+    position: absolute;
+    width: 100%;
+    bottom: 0px;
+    left: 0px;
+    z-index: 1;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+    animation-duration: 1s;
+    animation-delay: 0.5s;
+}
+
+.bar-graph-one {
+    animation-name: bar-graph-one;
+}
+
+.bar-graph-two {
+    animation-name: bar-graph-two;
+}
+
+.bar-graph-three {
+    animation-name: bar-graph-three;
+}
+
+.bar-graph+div>p {
+    text-align: center;
+}
+
+
+/* Bar Graph Vertical Animations */
+
+@keyframes bar-graph-one {
+    from {
+        background-color: white;
+        height: 0%;
+    }
+    to {
+        background-color: grey;
+        height: 30%;
+    }
+}
+
+@keyframes bar-graph-two {
+    from {
+        background-color: white;
+        height: 0%;
+    }
+    to {
+        background-color: grey;
+        height: 40%;
+    }
+}
+
+@keyframes bar-graph-three {
+    from {
+        background-color: white;
+        height: 0%;
+    }
+    to {
+        background-color: grey;
+        height: 80%;
+    }
+}
